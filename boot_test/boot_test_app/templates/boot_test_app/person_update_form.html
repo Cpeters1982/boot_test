@@ -3,8 +3,5 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<form method="post" novalidate>
-  {% csrf_token %}
   {% crispy form %}
-  <a href="{% url 'person_edit' %}" class="btn btn-primary">Edit person</a>
 {% endblock %}
